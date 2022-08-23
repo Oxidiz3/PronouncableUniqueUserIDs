@@ -4,7 +4,6 @@ from random import randint, random
 class IdGenerator:
     def __init__(self, wordList):
         self.wordList = wordList
-        self.seed = randint(0, 2^31)
     
     def get_new_id(self):
         new_id_list = [self.get_random_word() for x in range(4)]
